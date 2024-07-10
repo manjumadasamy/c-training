@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int count=0,num=153,rem,num2,add=0,num3;
+    num2=num;
+    num3=num;
+    while(num>0)
+    {
+    num=num/10;
+    count++;
+    }
+    while( num2>0)
+    {
+         rem=num2%10;
+         num2=num2/10;
+         add+=pow(rem,count);
+    }
+    printf("%d",add);
+    if(num3==add)
+      printf( "\n num is amstrong");
+      else
+         printf(" \n num is not amstrong");
+         
+    return 0;
+    
+}
