@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int limit,t1=0,t2=1,t3,temp=0,t;
+    scanf("%d",&limit);
+    t=t1+t2;
+    for(int i=0;i<limit-2;i++)
+    {
+        t3=t1+t2;
+        temp=t3+temp;
+        t1=t2;
+        t2=t3;
+    }
+        printf("%d",temp+t);
+    
+}
