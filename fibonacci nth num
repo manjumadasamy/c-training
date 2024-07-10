@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    int limit,t1=0,t2=1,t3;
+    scanf("%d",&limit);
+    for(int i=0;i<limit-2;i++)
+    {
+        t3=t1+t2;
+        t1=t2;
+        t2=t3;
+    }
+        printf("%d",t3);
+       return 0;
+}
