@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int size,count=0;
+    scanf("%d",&size);
+    int arr[size];
+    for(int index=0;index<size;index++)
+    scanf("%d",&arr[index]);
+    int key;
+    scanf("%d",&key);
+    for(int index=0;index<size;index++)
+    {
+        if(arr[index]<key)
+        count++;
+    }
+    printf("%d",count);
+    return 0;
+}
