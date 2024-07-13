@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    int size,i,j,k,temp=0,second_largest,second_smallest;
+    scanf("%d",&size);
+    int arr[size];
+    for(i=0;i<size;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<size;i++)
+    {
+        for(j=i+1;j<size;j++)
+        {
+            if(arr[i]>arr[j])
+            {
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    
+   for(i=0;i<size;i++)
+    {
+        for(j=i+1;j<size;j++)
+        {
+            if(arr[i]==arr[j])
+         {
+             for(k=j;k<size;k++)
+             {
+                 arr[k]=arr[k+1];
+             }
+              size--;
+              j--;
+         }   
+       
+        }}
+    second_smallest=arr[1];
+  second_largest=arr[size-2];
+     printf("second_largest-%d second_smallest-%d",second_largest,second_smallest);
+    return 0;
+    }
