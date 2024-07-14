@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[30];
+    fgets(str,sizeof(str),stdin);
+    int index;
+    for (index=0;str[index]!='\0';index++);
+    printf("%d",index-1);
+
+    return 0;
+}
