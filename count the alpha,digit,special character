@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char str[50];
+    fgets(str,sizeof(str),stdin);
+    int index=0,alpha=0,digit=0,special=0;
+    while(str[index]!='\0')
+    {
+        if((str[index]>='a' && str[index]<='z')||(str[index]>='A' && str[index]<='Z'))
+        alpha++;
+         else if(str[index]>='0' && str[index]<='9')
+         digit++;
+        else
+        special++;
+       index++;
+        }
+printf("%d %d %d",alpha,digit,special-1);
+return 0;
+}
