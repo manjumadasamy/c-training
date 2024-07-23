@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[]="rvsctsr";
+    char alphabets[123]={0};
+     int i=0,count=0;
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(alphabets(str[i]>1)){
+         printf("\n%c",str[i]);
+    }}
+      return 0;
+}
